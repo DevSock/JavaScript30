@@ -68,6 +68,12 @@
       audio.currentTime = 0;
       audio.play();
     }
+
+    function animateKey(key) {
+      const keyEl = document.querySelector(`.key[data-key="${key}"]`);
+      if (!keyEl) return;
+      keyEl.classList.add('playing');
+    }
   </script>
 
 
