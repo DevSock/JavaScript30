@@ -74,6 +74,11 @@
       if (!keyEl) return;
       keyEl.classList.add('playing');
     }
+
+    function removeTransform(e) {
+      if (e.propertyName !== 'transform') return;
+      e.target.classList.remove('playing');
+    }
   </script>
 
 
