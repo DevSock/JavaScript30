@@ -81,6 +81,11 @@
     }
 
     keys.forEach(key => key.addEventListener('transitionend', removeTransform));
+
+    window.addEventListener('keydown', function (event) {
+      playSound(event.keyCode);
+      animateKey(event.keyCode);
+    });
   </script>
 
 
